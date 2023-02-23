@@ -1,4 +1,7 @@
 *{box-sizing: border-box;}
+html,body{
+    height: 100%;
+}
 body{
     margin: 0;
     padding: 0;
@@ -7,11 +10,79 @@ body{
 }
 .container{
     width: 800px;
+    min-width: 100%;
+    height: 100%;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient( to right, #2f77b3,#61bbdc);
+    background-image: url(../images/cloud.png),
+                        linear-gradient( 180deg, #2f77b3,#61bbdc);
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    background-position: center bottom;
     color: #fff;
     position: relative;
     padding: 40px 20px;
+}
+.cityname{
+    font-size: 1.2em;
+}
+.time{
+    font-weight: 300;
+}
+.nowtemp i{
+    font-size: 5.5em;
+    color: #fcfc00;
+}
+.desc{
+    font-size: 1.5em;
+}
+.temp{
+    font-size: 5em;
+    font-weight: 500;
+    letter-spacing: -5px;
+    line-height: 1;
+    margin-top: 20px;
+}
+.min-temp{
+    padding-right: 5px;
+    border-right: 1px solid #fff;
+}
+.max-temp{
+    padding-left: 5px;
+}
+.text-shadow{
+    text-shadow: 1px 0 1px #fff,
+                 0px 1px 1px #fff,
+                 -1px 0 1px #fff,
+                 0px -1px 1px #fff;
+    
+}
+.ntemp{
+    text-align: center;
+}
+.ntemp h1{
+    font-size: 1.3em;
+}
+.wi-icon{
+    margin: 1em 0 0.5em 0;
+}
+.wi-text i{
+    font-size: 1.5em;
+}
+.wi-text{
+    font-size: 0.9em;
+    font-weight: 300;
+    text-align: left;
+}
+.twotemp{
+    background: rgba(0,0,0,0.3);
+    border-radius: 4%;
+}
+.ttemp h1{
+    font-size: 1em;
+}
+.ttempbox i{
+    font-size: 6.5em;
+    color: #fcfc00;
 }

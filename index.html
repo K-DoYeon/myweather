@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/weather-icons.css">
     <link rel="stylesheet" href="css/weather-icons-wind.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- jquery -->
@@ -22,16 +24,62 @@
 </head>
 <body>
     <div class="container">
-        <div class="cityname">장기동</div>
-        <p class="time">오후05시 49분</p>
-        <div class="tempbox">
-            <div class="nowtemp">
-                <i class="wi wi-day-sunny"></i>
-                <br>
-                <p class="temp">-20°C</p>
-            </div>
-            <div class="twotemp">
 
+        <div class="text-center cityname" id="cityname">장기동</div>
+        <p class="text-center time" id="time">오후05시 49분</p>
+        <div class="tempbox mt-5">
+            <div class="nowtemp d-flex align-items-center" id="nowtemp">
+                <i class="wi wi-day-sunny"></i>
+                <p class="desc ml-3" id="desc">쾌창한 날씨</p>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <p class="temp" id="temp">-20°</p>
+                    <span class="min-temp" id="min-temp">
+                        <i class="wi wi-thermometer text-primary text-shadow"></i>-50°C
+                    </span>
+                    <span class="max-temp" id="max-temp">
+                        <i class="wi wi-thermometer text-danger text-shadow"></i>-10°C
+                    </span>
+                </div>
+                <div class="col-3 ntemp">
+                    <h1>내일</h1>
+                    <div class="wi-icon">
+                        <i class="wi wi-day-rain"></i>
+                    </div>
+
+                    <div class="wi-text">
+                        <span class="nm-temp">최저51°</span>
+                        <span class="nm-temp">최고100°</span>
+                    </div>
+                </div>
+
+                <div class="col-3 ntemp">
+                    <h1>모레</h1>
+                    <div class="wi-icon">
+                        <i class="wi wi-day-rain"></i>
+                    </div>
+
+                    <div class="wi-text">
+                        <span class="nm-temp">최저51°</span>
+                        <span class="nm-temp">최고100°</span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="twotemp">
+                <div class="ttemp desc bb-">
+                    <h1>정보</h1>
+                </div>
+                <div class="ttempbox ">
+                    <i class="wi wi-day-sunny"></i>
+                    <p class="ml-3 " id="">쾌창한 날씨</p>
+
+                </div>
+                
+                
             </div>
             <div class="threetemp">
 
